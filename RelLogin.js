@@ -3,7 +3,7 @@ document.querySelector('#loginForm').addEventListener('submit', function(e) {
     const uname = document.querySelector('input[name="uname"]').value;
     const psw = document.querySelector('input[name="psw"]').value;
     
-    axios.post('http://localhost:3001/login', {
+    axios.post('https://port-0-charity-backend-57lz2alpkfgk5p.sel5.cloudtype.app/login', {
         userid: uname,
         password: psw,
     })

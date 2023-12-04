@@ -32,7 +32,7 @@ document.querySelector('button[type="submit"]').addEventListener('click', functi
       email: email
     };
   
-    axios.post('http://localhost:3001/register', userData)
+    axios.post('https://port-0-charity-backend-57lz2alpkfgk5p.sel5.cloudtype.app/register', userData)
       .then(function(response) {
         console.log(response.data);
         // 여기에 회원가입 성공 후 처리 로직 작성
