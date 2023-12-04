@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" id="name" name="name" placeholder="Name">
+        <input type="text" id="userid" name="userid" placeholder="User ID">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <button type="submit">Update</button>
+    </form>
+
+    <script>
+        document.querySelector('#userForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // 사용자 정보 업데이트 관련 코드 작성
+        });
+    </script>
+</body>
+</html>

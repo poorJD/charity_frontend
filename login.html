@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Donors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+<head>
+    <title>회원가입</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <!--헤더-->
+    <header>
+        <div class="container">
+            <h1>
+                <button data-animation-scroll="true" data-target="#mian" id="goToMain"><i class="fa-solid fa-hand-holding-heart"></i>Good Donors</button>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <button data-animation-scroll="true" data-target="#intro">소개</button>
+                    </li>
+                    <li>
+                        <button data-animation-scroll="true" data-target="#donate">후원하기</button>
+                    </li>
+                    <li>
+                        <button data-animation-scroll="true" data-target="#kid">후원아동</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!--헤더-->
+    <form class="login" id="myForm">
+        <h2>회원가입</h2>
+        <label for="name"><b>이름</b></label>
+        <input type="text" placeholder="이름을 입력하세요." name="name" required>
+
+        <label for="email"><b>이메일</b></label>
+        <input type="text" placeholder="이메일을 입력하세요." name="email" required>
+        <p id="emailError" style="color:red; display:none;">이메일 형식이 아닙니다.</p>
+
+        <label for="uname"><b>아이디</b></label>
+        <input type="text" placeholder="아이디를 입력하세요." name="uname" required>
+
+        <label for="psw"><b>비밀번호</b></label>
+        <input type="password" placeholder="비밀번호를 입력하세요." name="psw" required>
+
+        <label for="psw-repeat"><b>비밀번호 확인</b></label>
+        <input type="password" placeholder="비밀번호를 다시 입력하세요." name="psw-repeat" required>
+        <p id="passwordError" style="color:red; display:none;">비밀번호가 일치하지 않습니다.</p>
+
+        <button type="submit" id="SuccessLogin">회원가입</button>
+    </form>
+    <script src="signup.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/me.jpg') center center;
+  background-size: cover;
+  padding-right: 15px;
+  
+}
+header{
+  position: fixed;
+  z-index: 1;
+  top:0;
+  width: 100%;
+  padding: 1rem;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;;
+}
+header button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+header h1 button{
+  font-size: 2rem;
+  font-weight: bold;
+}
+header nav ul{
+  display: flex;
+}
+header nav ul li{
+  padding: 10px;
+}
+header nav ul li button{
+  font-size: 1.2rem;
+}
+header.active{
+  background-color: black;
+  animation: fadeIn 0.5 ease-in-out;
+}
+@keyframes fadeIn{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+.login {
+  width: 600px;
+  padding: 16px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 200px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #2f353a;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 11px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #04cf5c;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
